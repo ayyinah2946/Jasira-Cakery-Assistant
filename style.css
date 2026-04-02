@@ -1,0 +1,304 @@
+body{
+font-family: 'Segoe UI', Arial, sans-serif;
+background:#fff5f5;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+/* container */
+
+
+.chat-container{
+width:100%;
+right:20px;
+bottom:20px;
+height:100vh;
+background:white;
+display:flex;
+flex-direction:column;
+}
+
+/* header */
+
+.header{
+background:linear-gradient(135deg,#ffb6b6,#ffc6c6);
+padding:16px;
+font-weight:600;
+font-size:18px;
+text-align:center;
+color:#5a2b2b;
+}
+
+/* chat area */
+
+#chat-box{
+flex:1;
+padding:15px;
+overflow-y:auto;
+background:#fffafa;
+}
+
+/* messages */
+
+.user,
+.bot{
+margin:8px 0;
+display:flex;
+}
+
+.user{
+justify-content:flex-end;
+}
+
+.bot{
+justify-content:flex-start;
+}
+
+/* bubble */
+
+.bubble{
+padding:10px 14px;
+border-radius:16px;
+max-width:70%;
+font-size:14px;
+line-height:1.4;
+box-shadow:0 2px 5px rgba(0,0,0,0.05);
+}
+
+.user .bubble{
+background:#ffdede;
+}
+
+.bot .bubble{
+background:#f3f3f3;
+}
+
+/* quick buttons */
+
+.quick-buttons{
+display:flex;
+gap:8px;
+padding:10px;
+overflow-x:auto;
+background:white;
+border-top:1px solid #eee;
+}
+
+.quick-buttons button{
+border:none;
+background:#ffe3e3;
+padding:8px 12px;
+border-radius:20px;
+cursor:pointer;
+font-size:13px;
+transition:0.2s;
+}
+
+.quick-buttons button:hover{
+background:#ffcaca;
+}
+
+/* input */
+
+.input-area{
+display:flex;
+padding:10px;
+border-top:1px solid #eee;
+background:white;
+}
+
+input{
+flex:1;
+padding:10px;
+border-radius:20px;
+border:1px solid #ddd;
+outline:none;
+font-size:14px;
+}
+
+button{
+padding:10px 14px;
+border:none;
+border-radius:20px;
+margin-left:6px;
+background:#ffb6b6;
+cursor:pointer;
+font-weight:500;
+}
+
+button:hover{
+background:#ffa4a4;
+}
+
+.bubble{
+animation:fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(5px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.typing{
+font-size:13px;
+color:#888;
+margin:6px;
+font-style:italic;
+}
+
+.catalog-card{
+background:#fff0f0;
+padding:12px;
+border-radius:12px;
+margin:8px;
+}
+
+.catalog-title{
+font-weight:600;
+margin-bottom:4px;
+}
+
+.catalog-card button{
+margin-top:6px;
+background:#ffb6b6;
+border:none;
+padding:8px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.popup-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+pointer-events:auto;
+}
+
+.popup-box{
+background:white;
+padding:35px;
+border-radius:16px;
+width:320px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+pointer-events:auto;
+}
+
+.popup-logo{
+width:70px;
+margin-bottom:10px;
+}
+
+.popup-box h2{
+margin:0;
+font-size:16px;
+color:#777;
+}
+
+.popup-box h1{
+margin:4px 0 10px 0;
+font-size:22px;
+}
+
+.popup-box p{
+font-size:13px;
+color:#666;
+margin-bottom:10px;
+}
+
+.popup-box input{
+width:80%;
+padding:10px;
+border-radius:8px;
+border:1px solid #ccc;
+margin-top:8px;
+text-align:center;
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+.popup-box button{
+margin-top:12px;
+width:80%;
+padding:10px;
+border:none;
+background:#ff8a8a;
+color:white;
+border-radius:8px;
+font-weight:500;
+cursor:pointer;
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+button:disabled{
+opacity:0.6;
+cursor:not-allowed;
+}
+
+#phoneErrorPopup{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.4);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+.popup-content{
+  background:white;
+  padding:20px;
+  border-radius:8px;
+  text-align:center;
+}
+
+.error-icon{
+  font-size:35px;
+  color:#e53935;
+  margin-bottom:10px;
+}
+
+.wa-button{
+position:fixed;
+bottom:110px;
+right:20px;
+width:60px;
+height:60px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+z-index:999;
+}
+
+.wa-button img{
+width:35px;
+height:35px;
+}
+
+.wa-button:hover{
+transform:scale(1.1);
+transition:0.2s;
+}
