@@ -30,7 +30,13 @@ font-weight:600;
 font-size:18px;
 text-align:center;
 color:#5a2b2b;
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:8px;
 }
+
 
 /* chat area */
 
@@ -308,10 +314,11 @@ transform:scale(1.1);
 transition:0.2s;
 }
 
+
 .header-logo{
-  height:24px;
-  vertical-align:middle;
-  margin-right:2px;
+height:24px;
+width:auto;
+display:inline-block;
 }
 
 .welcome-logo{
