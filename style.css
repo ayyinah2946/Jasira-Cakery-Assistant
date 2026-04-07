@@ -214,6 +214,11 @@ margin:4px 0 10px 0;
 font-size:22px;
 }
 
+.popup-box h2,
+.popup-box h1{
+line-height:1.2;
+}
+
 .popup-box p{
 font-size:13px;
 color:#666;
@@ -301,4 +306,16 @@ height:35px;
 .wa-button:hover{
 transform:scale(1.1);
 transition:0.2s;
+}
+
+.header-logo{
+  height:24px;
+  vertical-align:middle;
+  margin-right:2px;
+}
+
+.welcome-logo{
+  width:80px;
+  display:block;
+  margin:10px auto;
 }

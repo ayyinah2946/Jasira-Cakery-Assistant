@@ -81,16 +81,10 @@ const data = await res.json()
 
 console.log("HISTORY DATA:", data)
 
-if(data.history.length === 0){
-
 addMessage(
 "Halo Kak! Selamat datang di Jasira Cakery 🍰 Saya Admin Virtual yang siap bantu Kakak cari kue ulang tahun, info cabang, atau pemesanan😊",
 "bot"
 )
-
-return
-}
-
 
 for(let msg of data.history){
 
