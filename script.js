@@ -159,7 +159,6 @@ card.className = "catalog-card"
 
 card.innerHTML = `
 <div class="catalog-title">📄 Katalog Jasira Cakery</div>
-</div>
 
 <button onclick="window.open('${API_URL}/katalog','_blank')">
 📖 Buka Katalog
